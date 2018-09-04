@@ -1,14 +1,14 @@
 #The user inputs an integer until a negative number inentered. Algorithm findes
 #the maximum positive number input.
 
-num_int = int(input("Please input an integer: "))
-num_max = 0
+num_int = int(input("Input a number: "))    # Do not change this line
+max_int = 0
 
 while num_int >= 0:
-    if num_int > num_max:
-        num_max = num_int
-        num_int = int(input("Please input an integer: "))
-    
+    num_int = int(input("Input a number: "))    # Do not change this line
+    if num_int > max_int:
+        max_int = num_int
         
+    
+print("The maximum is", max_int)    # Do not change this line
 
-print(num_max)
