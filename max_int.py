@@ -4,8 +4,11 @@
 num_int = int(input("Please input an integer: "))
 num_max = 0
 
-if num_int >= 0:
-    while True:
-        num_max = max(num_int)
+while num_int >= 0:
+    if num_int > num_max:
+        num_max = num_int
+        num_int = int(input("Please input an integer: "))
+    
+        
 
-elif num_int < 0:
+print(num_max)
